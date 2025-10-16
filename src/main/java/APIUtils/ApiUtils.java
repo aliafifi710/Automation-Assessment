@@ -12,7 +12,7 @@ public class ApiUtils {
                 .baseUri(BASE_URL)
                 .when()
                 .get("/" + country + "/" + postalCode)
-                .then().log().status()
+                .then().log().status().log().body()
                 .extract()
                 .response();
     }
