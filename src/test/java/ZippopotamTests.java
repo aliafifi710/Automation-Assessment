@@ -34,6 +34,9 @@ public class ZippopotamTests {
         Response res = ApiUtils.getLocation(country, zipCode);
         Assert.assertEquals(res.statusCode(), HttpStatus.SC_NOT_FOUND, "Expected 404 Not Found");
     }
+    //this test should return 404 because there is no such country code BU
+    //but the api returns 505 internal server error instead
+    //this may depend on the api design
     @Test(priority = 2)
     public void testInvalidCountryCodeWrongFormat() {
         country = "12345";
