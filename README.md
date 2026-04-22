@@ -1,4 +1,4 @@
 # Automation-Assessment
-this Repo consists of 3 automation testing tasks using selenium, Rest Assured, and Appium
+this Repo consists of 2 basic automation testing tasks using selenium, and Rest Assured.
 Code is pushed on master branch 
 
